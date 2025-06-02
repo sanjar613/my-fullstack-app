@@ -6,7 +6,7 @@ import { setupRoutes } from './routes.js';
 import { loadingSpinner, showToast } from './utils/ui.js';
 
 // Set base API URL
-window.API_URL = 'http://localhost:5000/api';
+window.API_URL = '/api';
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', initApp);
