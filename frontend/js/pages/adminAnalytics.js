@@ -1,6 +1,3 @@
-
-
-
 import { icons } from "../utils/icons.js";
 import { authFetch } from "../services/auth.js";
 import { showToast } from "../utils/ui.js";
@@ -198,7 +195,10 @@ function updateSummaryStats(summary) {
 function createRequestStatusChart(statusData) {
   const ctx = document.getElementById("requestStatusChart").getContext("2d");
 
-  if (window.requestStatusChart) {
+  if (
+    window.requestStatusChart &&
+    typeof window.requestStatusChart.destroy === "function"
+  ) {
     window.requestStatusChart.destroy();
   }
 
@@ -247,7 +247,10 @@ function createRequestStatusChart(statusData) {
 function createPriorityChart(priorityData) {
   const ctx = document.getElementById("priorityChart").getContext("2d");
 
-  if (window.priorityChart) {
+  if (
+    window.priorityChart &&
+    typeof window.priorityChart.destroy === "function"
+  ) {
     window.priorityChart.destroy();
   }
 
@@ -283,7 +286,10 @@ function createPriorityChart(priorityData) {
 function createCommonIssuesChart(issuesData) {
   const ctx = document.getElementById("commonIssuesChart").getContext("2d");
 
-  if (window.commonIssuesChart) {
+  if (
+    window.commonIssuesChart &&
+    typeof window.commonIssuesChart.destroy === "function"
+  ) {
     window.commonIssuesChart.destroy();
   }
 
@@ -323,7 +329,10 @@ function createCommonIssuesChart(issuesData) {
 function createResolutionTimeChart(completionTime) {
   const ctx = document.getElementById("resolutionTimeChart").getContext("2d");
 
-  if (window.resolutionTimeChart) {
+  if (
+    window.resolutionTimeChart &&
+    typeof window.resolutionTimeChart.destroy === "function"
+  ) {
     window.resolutionTimeChart.destroy();
   }
 
