@@ -1,4 +1,6 @@
 # Dern-Support: IT Technical Support Platform
+link to deployed site in railway:
+https://my-fullstack-app-production-7535.up.railway.app/
 
 Dern-Support is a full-stack web application for managing IT support requests, knowledge base articles, analytics, and customer feedback. It is designed for both individual and business users, with a dedicated admin dashboard for support staff.
 
